@@ -22,7 +22,7 @@ app.use(express.json())
 app.use(Cors())
 
 // DB config
-const connection_url = `mongodb+srv://admin:u62vzsamA4VxDDKA@cluster0.tma5d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+const connection_url = `mongodb+srv://admin:<password>@cluster0.tma5d.mongodb.net/<yourDatabaseName>?retryWrites=true&w=majority`
 
 mongoose.connect(connection_url, {})
 const db = mongoose.connection
